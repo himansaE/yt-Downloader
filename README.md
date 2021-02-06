@@ -12,4 +12,4 @@ A simple youtube downloader with python
 
 3. Add folder to path.
 
-4. Run _`ytpl`_ to download youtube playlist
+4. Run _`ytd`_ to download youtube video or playlist

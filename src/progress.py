@@ -1,9 +1,8 @@
 
 import shutil
 from sys import stdout
-from os import system, name as os_name
 from pytube.query import StreamQuery
-from converter import data_speed, file_size
+from converter import file_size
 from m3u import write_m3u_file
 
 
@@ -29,12 +28,3 @@ def on_complete(stream: StreamQuery, filepath: str):
     #title = ".".join(filename.split(".")[:-1:])
     dir = "\\".join(filepath.split("\\")[:-1:])
     write_m3u_file(dir, filename)
-
-
-def clear():
-    if os_name in ('nt', 'dos'):
-        system("cls")
-    elif os_name in ('linux', 'osx', 'posix'):
-        system.call("clear")
-    else:
-        print("\n") * 120

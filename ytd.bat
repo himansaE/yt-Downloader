@@ -1,1 +1,2 @@
-python src/yt.py
+@Echo off
+python "%~dp0/src/yt.py"

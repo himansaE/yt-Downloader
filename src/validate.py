@@ -1,5 +1,3 @@
-
-from typing import Dict
 from pytube import YouTube, Playlist
 from urllib import error as url_err
 

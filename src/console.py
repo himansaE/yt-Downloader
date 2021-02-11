@@ -1,5 +1,7 @@
 from colorama import Fore, Style
 from os import system, name as os_name
+from sys import exit
+from cursor import show
 
 
 class color:
@@ -20,3 +22,8 @@ def clear():
         system.call("clear")
     else:
         print("\n") * 120
+
+
+def close():
+    show()
+    exit()

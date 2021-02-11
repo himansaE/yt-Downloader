@@ -1,0 +1,47 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "title": "Root schema for yt-downloader",
+  "properties": {
+    "$schema": {
+      "type": "string"
+    },
+    "audioOnly": {
+      "$id": "#/properties/audioOnly",
+      "type": "boolean",
+      "title": "Download audio only file",
+      "default": false,
+      "examples": [false, true]
+    },
+    "defaultVideoQuality": {
+      "$id": "#/properties/defaultVideoQuality",
+      "default": "auto",
+      "examples": ["auto", "720p", "480p", "360p", "240p", "144p"],
+      "title": "Set Default video Quality",
+      "type": "string"
+    },
+    "downloadDirectory": {
+      "$id": "#/properties/DownloadDirectory",
+      "default": "./",
+      "examples": ["./"],
+      "title": "Set video download location",
+      "type": "string",
+      "description": " use './' to download same directory",
+      "pattern": "."
+    },
+    "newFolderForPlaylist": {
+      "$id": "#/properties/newFolderForPlaylist",
+      "default": true,
+      "description": "Create a new folder for the playlist on every download.\n If You set this 'true' All videos on playlist store on New folder named with Title of the playlist.\n if you set this 'false' all videos on playlist store on the same directory.",
+      "examples": [true, false],
+      "type": "boolean"
+    },
+    "openFileAfterDownload": {
+      "$id": "#/properties/openFileAfterDownload",
+      "default": true,
+      "description": "Open file or folder after download",
+      "examples": [true, false],
+      "type": "boolean"
+    }
+  },
+  "additionalProperties": false
+}

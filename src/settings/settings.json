@@ -1,0 +1,9 @@
+{
+  "$schema": "./settings.schema.json",
+
+  "audioOnly": false,
+  "defaultVideoQuality": "720p",
+  "downloadDirectory": "./",
+  "newFolderForPlaylist": true,
+  "openFileAfterDownload": true
+}
